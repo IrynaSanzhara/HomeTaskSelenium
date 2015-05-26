@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
  */
 public class Login {
 
-    private static final String JENKINS_URL = "http://clm-aus-002258.bmc.com:8080";
+    private static final String JENKINS_URL = "http://seltr-kbp1-1.synapse.com:8080";
     private static final String LOGIN = "//*[contains(@href,'/login')]";
     private static final String FULL_USER_NAME = "//*[@class='model-link inside inverse']/b";
 
@@ -22,7 +22,7 @@ public class Login {
      */
     private static final String LOGIN_USER_FIELD = "j_username";
     private static final String LOGIN_PASSWORD_FIELD = "j_password";
-    private static final String LOGIN_REMEMBER_CHECKBOX = "remember_me";
+    //private static final String LOGIN_REMEMBER_CHECKBOX = "remember_me";
     private static final String LOGIN_BUTTON = "yui-gen1-button";
 
     /**
@@ -53,7 +53,7 @@ public class Login {
         driver.findElement(By.xpath(LOGIN)).click();
         driver.findElement(By.id(LOGIN_USER_FIELD));
         driver.findElement(By.name(LOGIN_PASSWORD_FIELD));
-        driver.findElement(By.id(LOGIN_REMEMBER_CHECKBOX));
+        //driver.findElement(By.id(LOGIN_REMEMBER_CHECKBOX));
         driver.findElement(By.id(LOGIN_BUTTON));
     }
 
