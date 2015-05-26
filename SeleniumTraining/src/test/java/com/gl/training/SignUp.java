@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class SignUp {
 
-    private static final String JENKINS_URL = "http://clm-aus-002258.bmc.com:8080";
+    private static final String JENKINS_URL = "http://seltr-kbp1-1.synapse.com:8080";
     private static final String SIGN_UP = "//*[@href='/signup']";
 
     private static final String FULL_USER_NAME = "//*[@class='model-link inside inverse']/b";
